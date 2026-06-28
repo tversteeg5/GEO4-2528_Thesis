@@ -25,7 +25,7 @@ As a result, the notebooks will not reproduce the thesis results without the ori
 
 ## What is included
 
-The repository contains the following notebooks:
+The repository contains the following notebooks, which are located in the folder `thesis-main`:
 
 ### `pressure_loss_max_m.ipynb`
 
