@@ -1,8 +1,16 @@
 # Methodology Notebooks for District Heating Network and TES Analysis
 
-This repository contains the Jupyter notebooks used to support the methodology of the MSc thesis:
+This repository contains the Jupyter notebooks used to support the methodology of a MSc thesis.
 
-**Decentralized thermal energy storage in district heating for supply temperature reduction**: *A case study of the Arnhem district heating system*
+## Thesis context
+
+The thesis investigates how decentralized short-term TES can support lower supply temperature operation in existing district heating networks.
+
+The main research question is:
+
+**To what extent can decentralized short-term TES at the substation level enable lower supply temperature operation in existing second- and third-generation district heating networks?**
+
+The methodology was applied to the Arnhem district heating system. The analysis focused on the primary network and evaluated how TES near a hydraulically constrained downstream demand area can reduce peak transport requirements, lower required supply temperatures, and affect heat losses, source dispatch, emissions, heat pump performance, pumping energy, and levelized cost of heat.
 
 The notebooks document the modelling and analysis workflow used to evaluate whether decentralized short-term thermal energy storage (TES) at substation level can help reduce supply temperatures in an existing second- and third-generation district heating network.
 
@@ -27,23 +35,15 @@ As a result, the notebooks will not reproduce the thesis results without the ori
 
 The repository contains the following notebooks, which are located in the folder `thesis-main`:
 
-### `pressure_loss_max_m.ipynb`
-
-Calculates pressure losses and maximum allowable mass flow in a simplified pipe network.
+**`pressure_loss_max_m.ipynb`**
 
 This notebook supports the hydraulic part of the methodology by using pipe lengths, diameters, demand fractions, friction-factor assumptions, and minor-loss factors to estimate pressure drops in the primary district heating network. It also includes pressure-profile calculations and Monte Carlo-style variation of demand fractions.
 
-### `thermal_storage.ipynb`
-
-Demonstrates the thermal energy storage heat-loss model.
+**`thermal_storage.ipynb`**
 
 The notebook converts a state-of-charge-like variable into a simplified layered cylindrical tank representation. It then estimates hourly TES heat losses based on storage volume, tank geometry, hot and cold layer temperatures, ambient temperature, insulation properties, and state of charge.
 
-The file should be named `thermal_storage.ipynb` in the repository, because the main notebook imports the TES heat-loss function from this notebook.
-
-### `Thesis_code_main.ipynb`
-
-Contains the main thesis workflow.
+**`Thesis_code_main.ipynb`**
 
 This notebook combines the broader analysis steps used in the thesis, including:
 
@@ -60,16 +60,6 @@ This notebook combines the broader analysis steps used in the thesis, including:
 * emission calculations;
 * uncertainty and sensitivity analysis;
 * plots of the main results.
-
-## Thesis context
-
-The thesis investigates how decentralized short-term TES can support lower supply temperature operation in existing district heating networks.
-
-The main research question is:
-
-**To what extent can decentralized short-term TES at the substation level enable lower supply temperature operation in existing second- and third-generation district heating networks?**
-
-The methodology was applied to the Arnhem district heating system. The analysis focused on the primary network and evaluated how TES near a hydraulically constrained downstream demand area can reduce peak transport requirements, lower required supply temperatures, and affect heat losses, source dispatch, emissions, heat pump performance, pumping energy, and levelized cost of heat.
 
 ## Repository purpose
 
