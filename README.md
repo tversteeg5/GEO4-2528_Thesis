@@ -2,8 +2,7 @@
 
 This repository contains the Jupyter notebooks used to support the methodology of the MSc thesis:
 
-**Decentralized thermal energy storage in district heating for supply temperature reduction**
-*A case study of the Arnhem district heating system*
+**Decentralized thermal energy storage in district heating for supply temperature reduction**: *A case study of the Arnhem district heating system*
 
 The notebooks document the modelling and analysis workflow used to evaluate whether decentralized short-term thermal energy storage (TES) at substation level can help reduce supply temperatures in an existing second- and third-generation district heating network.
 
